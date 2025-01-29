@@ -1,4 +1,4 @@
-# Eight Puzzle Game
+# Tile Trek
 
 A simple, interactive 8-Puzzle game built with HTML, CSS, and JavaScript. The player can shuffle the puzzle, make moves, and try to solve the puzzle. The goal state is visible at all times, and the game ends when the current state matches the goal state.
 
