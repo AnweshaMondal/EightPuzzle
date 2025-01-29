@@ -17,4 +17,4 @@ A simple, interactive 8-Puzzle game built with HTML, CSS, and JavaScript. The pl
 
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/yourusername/8-puzzle-game.git
+   git clone https://github.com/AnweshaMondal/TileTrek.git
