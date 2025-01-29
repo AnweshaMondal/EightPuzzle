@@ -1,0 +1,148 @@
+ @import url('https://fonts.googleapis.com/css2?family=Ribeye+Marrow&family=VT323&display=swap');
+
+.vt323-regular {
+    font-family: "VT323", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ribeye-marrow-regular {
+    font-family: "Ribeye Marrow", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: "Ribeye Marrow", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: #333;
+    background: linear-gradient(-90deg, #cea033a1, #51a5e1c9, #ffdde1, #82cb65c8);
+    background-size: 400% 400%;
+    animation: gradientBG 5s ease infinite;
+}
+
+/* Background Animation */
+
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    text-align: center;
+    border-radius: 12px;
+    padding: 30px;
+    width: 450px;
+}
+
+h1 {
+    color: rgb(185, 12, 121);
+    margin-bottom: 20px;
+    margin-top: 50px;
+    text-decoration: underline;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+} 
+
+/* Hover Effect */
+.tile:hover:not(.blank) {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Blank Tile */
+.tile.blank {
+    background-color: #f0f0f0;
+    border: 1px dashed #ccc;
+    cursor: default;
+} 
+
+/* Buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    font-family: "Ribeye Marrow", serif;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#win-message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #4CAF50;
+}
+
+.section h2 {
+    margin-bottom: 15px;
+    color: rgba(13, 18, 20, 0.799);
+    margin-top: 20px;
+}
+
+.goal-state {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}  
+
